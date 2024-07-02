@@ -24,7 +24,7 @@ your_redis_host should be the endpoint of your ElastiCache instance.
 Before you start using the app, you'll need to create the tasks table in your PostgreSQL database:
 
 
-sql
+##### sql
 
 ```CREATE TABLE tasks (
     id SERIAL PRIMARY KEY,
@@ -34,13 +34,13 @@ sql
 You can run these commands via any PostgreSQL client or psql utility:
 
 
-bash
+##### bash
 
 ```
 psql -h your_postgres_host -U your_db_user -d your_db_name -p 5432
 ```
 
-# After connecting to the DB, run:
+##### After connecting to the DB, run:
 ```
 CREATE TABLE tasks (
     id SERIAL PRIMARY KEY,
@@ -58,9 +58,9 @@ With Docker installed, navigate to the root of your project directory and run:
 ## Testing Your Application
 
 #### Add a new task:
-```curl -X POST http://localhost:80/tasks -H "Content-Type: application/json" -d '{"task": "Buy groceries"}```'
+```curl -X POST http://localhost:80/tasks -H "Content-Type: application/json" -d '{"task": "Buy groceries"}'```
 
 or 
 
 #### Get all tasks:
-curl http://localhost:80/tasks
+```curl http://localhost:80/tasks```
