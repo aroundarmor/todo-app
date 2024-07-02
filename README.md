@@ -25,23 +25,28 @@ Before you start using the app, you'll need to create the tasks table in your Po
 
 
 sql
-Copy Code
+
 ```CREATE TABLE tasks (
     id SERIAL PRIMARY KEY,
     description TEXT NOT NULL
-);```
+);
+```
 You can run these commands via any PostgreSQL client or psql utility:
 
 
 bash
-Copy Code
-```psql -h your_postgres_host -U your_db_user -d your_db_name -p 5432```
+
+```
+psql -h your_postgres_host -U your_db_user -d your_db_name -p 5432
+```
 
 # After connecting to the DB, run:
-```CREATE TABLE tasks (
+```
+CREATE TABLE tasks (
     id SERIAL PRIMARY KEY,
     description TEXT NOT NULL
-);```
+);
+```
 
 ## Running the Application
 
