@@ -26,7 +26,8 @@ Before you start using the app, you'll need to create the tasks table in your Po
 
 ##### sql
 
-```CREATE TABLE tasks (
+```
+CREATE TABLE tasks (
     id SERIAL PRIMARY KEY,
     description TEXT NOT NULL
 );
