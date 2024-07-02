@@ -10,6 +10,7 @@ export POSTGRES_PORT=5432
 # Redis environment variables
 export REDIS_HOST=your_redis_host
 export REDIS_PORT=6379
+export REDIS_USER=your_redis_username
 export REDIS_PASSWORD=your_redis_password
 
 echo "Environment variables set successfully!"
